@@ -1,0 +1,26 @@
+[
+  {
+    "query": "auth",
+    "relevant_symbols": ["UserSession", "AuthToken", "AuthenticationClient", "authenticate_user"]
+  },
+  {
+    "query": "authentication",
+    "relevant_symbols": ["AuthenticationClient", "authenticate_user", "validate_token", "decode_bearer_credential"]
+  },
+  {
+    "query": "validate token",
+    "relevant_symbols": ["validate_token", "AuthToken", "authenticate_user", "decode_bearer_credential"]
+  },
+  {
+    "query": "UserSession",
+    "relevant_symbols": ["UserSession", "authenticate_user", "session_display_name"]
+  },
+  {
+    "query": "config",
+    "relevant_symbols": ["RuntimeConfig", "runtimeConfig", "parseRequest"]
+  },
+  {
+    "query": "parseRequest",
+    "relevant_symbols": ["parseRequest", "ParsedRequest"]
+  }
+]

@@ -1,0 +1,607 @@
+{
+  "root": "/Volumes/ssd/thamo/Repos/agentx/abilex-agentx",
+  "measured_at": "2026-09-15T16:52:02.583107+00:00",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "binary_sha256": "a24d7259baa4ec0f4c08454098c6c89c9bcda0d0bc4736e0a6a99e376e31adf7",
+  "startup_ms": 1749.1928749986982,
+  "repeats": 20,
+  "results": [
+    {
+      "query": "auth",
+      "median_ms": 4.768729000716121,
+      "p95_ms": 6.373374999384396,
+      "ranking_median_ms": 2.9995,
+      "relationships_median_ms": 0.479,
+      "selection_median_ms": 0.4085,
+      "stats": {
+        "approximate_tokens": 2146,
+        "cache_load_us": 0,
+        "cache_write_us": 0,
+        "candidate_and_ranking_us": 2363,
+        "candidate_symbols": 5292,
+        "elapsed_us": 3252,
+        "files_indexed": 3516,
+        "files_parsed": 0,
+        "files_reparsed": 0,
+        "files_reused": 3516,
+        "files_scanned": 4192,
+        "human_payload_bytes": 17861,
+        "index_reused": true,
+        "index_us": 0,
+        "json_payload_bytes": 42707,
+        "parse_and_extract_us": 0,
+        "relationship_us": 348,
+        "returned_bytes": 8565,
+        "returned_symbols": 12,
+        "selection_us": 407,
+        "source_bytes": 25371254,
+        "symbols": 96293,
+        "traversal_us": 0
+      },
+      "symbols": [
+        {
+          "symbol": "auth",
+          "path": "apps/chat-agentx/api/server/routes/index.js",
+          "bytes": 31,
+          "sliced": false
+        },
+        {
+          "symbol": "IPluginAuth",
+          "path": "apps/chat-agentx/packages/data-schemas/src/types/pluginAuth.ts",
+          "bytes": 181,
+          "sliced": false
+        },
+        {
+          "symbol": "findOnePluginAuth",
+          "path": "apps/chat-agentx/packages/data-schemas/src/methods/pluginAuth.ts",
+          "bytes": 627,
+          "sliced": false
+        },
+        {
+          "symbol": "deletePluginAuth",
+          "path": "apps/chat-agentx/packages/data-schemas/src/methods/pluginAuth.ts",
+          "bytes": 845,
+          "sliced": false
+        },
+        {
+          "symbol": "runAuth",
+          "path": "apps/chat-agentx/api/server/middleware/__tests__/requireJwtAuth.spec.js",
+          "bytes": 277,
+          "sliced": false
+        },
+        {
+          "symbol": "validateOAuthUrl",
+          "path": "apps/chat-agentx/packages/api/src/mcp/oauth/handler.ts",
+          "bytes": 1854,
+          "sliced": false
+        },
+        {
+          "symbol": "authRes",
+          "path": "apps/chat-agentx/packages/api/src/mcp/__tests__/MCPOAuthClientRegistrationReuse.test.ts",
+          "bytes": 245,
+          "sliced": false
+        },
+        {
+          "symbol": "AuthStep",
+          "path": "apps/admin-agentx/src/types/auth.ts",
+          "bytes": 32,
+          "sliced": false
+        },
+        {
+          "symbol": "authRules",
+          "path": "__tests__/security/waf-rules-authentication.spec.ts",
+          "bytes": 1704,
+          "sliced": false
+        },
+        {
+          "symbol": "AuthSectionProps",
+          "path": "apps/chat-agentx/client/src/components/SidePanel/MCPBuilder/MCPServerDialog/sections/AuthSection.tsx",
+          "bytes": 76,
+          "sliced": false
+        },
+        {
+          "symbol": "runApiKeyAuth",
+          "path": "apps/chat-agentx/packages/api/src/middleware/remoteAgentAuth.ts",
+          "bytes": 532,
+          "sliced": false
+        },
+        {
+          "symbol": "requireJwtAuth",
+          "path": "apps/chat-agentx/api/server/middleware/requireJwtAuth.js",
+          "bytes": 2161,
+          "sliced": false
+        }
+      ]
+    },
+    {
+      "query": "authentication",
+      "median_ms": 4.298457999539096,
+      "p95_ms": 4.931625000608619,
+      "ranking_median_ms": 2.3505000000000003,
+      "relationships_median_ms": 0.427,
+      "selection_median_ms": 0.665,
+      "stats": {
+        "approximate_tokens": 4096,
+        "cache_load_us": 0,
+        "cache_write_us": 0,
+        "candidate_and_ranking_us": 1833,
+        "candidate_symbols": 4350,
+        "elapsed_us": 3012,
+        "files_indexed": 3516,
+        "files_parsed": 0,
+        "files_reparsed": 0,
+        "files_reused": 3516,
+        "files_scanned": 4192,
+        "human_payload_bytes": 24322,
+        "index_reused": true,
+        "index_us": 0,
+        "json_payload_bytes": 55360,
+        "parse_and_extract_us": 0,
+        "relationship_us": 391,
+        "returned_bytes": 16364,
+        "returned_symbols": 12,
+        "selection_us": 644,
+        "source_bytes": 25371254,
+        "symbols": 96293,
+        "traversal_us": 0
+      },
+      "symbols": [
+        {
+          "symbol": "IPluginAuth",
+          "path": "apps/chat-agentx/packages/data-schemas/src/types/pluginAuth.ts",
+          "bytes": 181,
+          "sliced": false
+        },
+        {
+          "symbol": "createPluginAuthMethods",
+          "path": "apps/chat-agentx/packages/data-schemas/src/methods/pluginAuth.ts",
+          "bytes": 3857,
+          "sliced": false
+        },
+        {
+          "symbol": "OAuthDetectionResult",
+          "path": "apps/chat-agentx/packages/api/src/mcp/oauth/detectOAuth.ts",
+          "bytes": 195,
+          "sliced": false
+        },
+        {
+          "symbol": "getAuthLocalizationKey",
+          "path": "apps/chat-agentx/client/src/components/SidePanel/Builder/ActionsAuth.tsx",
+          "bytes": 331,
+          "sliced": false
+        },
+        {
+          "symbol": "requireJwtAuth",
+          "path": "apps/chat-agentx/api/server/middleware/__tests__/requireJwtAuth.spec.js",
+          "bytes": 255,
+          "sliced": false
+        },
+        {
+          "symbol": "createOAuthReconnectionManager",
+          "path": "apps/chat-agentx/api/server/services/initializeOAuthReconnectManager.js",
+          "bytes": 84,
+          "sliced": false
+        },
+        {
+          "symbol": "validateOAuthUrl",
+          "path": "apps/chat-agentx/packages/api/src/mcp/oauth/handler.ts",
+          "bytes": 1854,
+          "sliced": false
+        },
+        {
+          "symbol": "TwoFactorAuthentication",
+          "path": "apps/chat-agentx/client/src/components/Nav/SettingsTabs/Account/TwoFactorAuthentication.tsx",
+          "bytes": 9257,
+          "sliced": false
+        },
+        {
+          "symbol": "OAuthReconnectionManager",
+          "path": "apps/chat-agentx/packages/api/src/mcp/oauth/OAuthReconnectionManager.ts",
+          "bytes": 78,
+          "sliced": true
+        },
+        {
+          "symbol": "FindPluginAuthParams",
+          "path": "apps/chat-agentx/packages/data-schemas/src/types/pluginAuth.ts",
+          "bytes": 95,
+          "sliced": false
+        },
+        {
+          "symbol": "AuthStep",
+          "path": "apps/admin-agentx/src/types/auth.ts",
+          "bytes": 32,
+          "sliced": false
+        },
+        {
+          "symbol": "OAuthSuccess",
+          "path": "apps/chat-agentx/client/src/components/OAuth/OAuthSuccess.tsx",
+          "bytes": 145,
+          "sliced": true
+        }
+      ]
+    },
+    {
+      "query": "validate token",
+      "median_ms": 4.9174369996762834,
+      "p95_ms": 7.3226669992436655,
+      "ranking_median_ms": 3.5785,
+      "relationships_median_ms": 0.278,
+      "selection_median_ms": 0.356,
+      "stats": {
+        "approximate_tokens": 1267,
+        "cache_load_us": 0,
+        "cache_write_us": 0,
+        "candidate_and_ranking_us": 2813,
+        "candidate_symbols": 5839,
+        "elapsed_us": 3472,
+        "files_indexed": 3516,
+        "files_parsed": 0,
+        "files_reparsed": 0,
+        "files_reused": 3516,
+        "files_scanned": 4192,
+        "human_payload_bytes": 9766,
+        "index_reused": true,
+        "index_us": 0,
+        "json_payload_bytes": 27285,
+        "parse_and_extract_us": 0,
+        "relationship_us": 237,
+        "returned_bytes": 5055,
+        "returned_symbols": 12,
+        "selection_us": 330,
+        "source_bytes": 25371254,
+        "symbols": 96293,
+        "traversal_us": 0
+      },
+      "symbols": [
+        {
+          "symbol": "validateToken",
+          "path": "apps/chat-agentx/api/server/middleware/validateImageRequest.js",
+          "bytes": 770,
+          "sliced": false
+        },
+        {
+          "symbol": "validToken",
+          "path": "apps/chat-agentx/api/server/middleware/spec/validateImages.spec.js",
+          "bytes": 15,
+          "sliced": false
+        },
+        {
+          "symbol": "isOpenIDTokenValid",
+          "path": "apps/chat-agentx/packages/api/src/utils/oidc.ts",
+          "bytes": 351,
+          "sliced": false
+        },
+        {
+          "symbol": "validate",
+          "path": "apps/chat-agentx/api/strategies/openidStrategy.spec.js",
+          "bytes": 304,
+          "sliced": false
+        },
+        {
+          "symbol": "VALID_TEMP_TOKEN",
+          "path": "apps/admin-agentx/e2e/mock-backend.mjs",
+          "bytes": 60,
+          "sliced": false
+        },
+        {
+          "symbol": "revokeOAuthToken",
+          "path": "apps/chat-agentx/packages/api/src/mcp/oauth/handler.ts",
+          "bytes": 2278,
+          "sliced": false
+        },
+        {
+          "symbol": "validTokenset",
+          "path": "apps/chat-agentx/api/server/services/AuthService.spec.js",
+          "bytes": 144,
+          "sliced": false
+        },
+        {
+          "symbol": "isValidObjectId",
+          "path": "apps/chat-agentx/api/server/middleware/validateImageRequest.js",
+          "bytes": 355,
+          "sliced": false
+        },
+        {
+          "symbol": "MCPTokenStorage",
+          "path": "apps/chat-agentx/packages/api/src/mcp/oauth/tokens.ts",
+          "bytes": 69,
+          "sliced": true
+        },
+        {
+          "symbol": "mockIsOpenIDTokenValid",
+          "path": "apps/chat-agentx/packages/api/src/utils/graph.spec.ts",
+          "bytes": 63,
+          "sliced": false
+        },
+        {
+          "symbol": "ValidationResult",
+          "path": "apps/chat-agentx/packages/api/src/files/validation.ts",
+          "bytes": 68,
+          "sliced": false
+        },
+        {
+          "symbol": "createToken",
+          "path": "apps/chat-agentx/packages/data-schemas/src/methods/token.ts",
+          "bytes": 578,
+          "sliced": false
+        }
+      ]
+    },
+    {
+      "query": "IPluginAuth",
+      "median_ms": 6.3831664992903825,
+      "p95_ms": 7.041042001219466,
+      "ranking_median_ms": 4.2755,
+      "relationships_median_ms": 0.3525,
+      "selection_median_ms": 1.0725,
+      "stats": {
+        "approximate_tokens": 2987,
+        "cache_load_us": 0,
+        "cache_write_us": 0,
+        "candidate_and_ranking_us": 4140,
+        "candidate_symbols": 8011,
+        "elapsed_us": 5696,
+        "files_indexed": 3516,
+        "files_parsed": 0,
+        "files_reparsed": 0,
+        "files_reused": 3516,
+        "files_scanned": 4192,
+        "human_payload_bytes": 19114,
+        "index_reused": true,
+        "index_us": 0,
+        "json_payload_bytes": 40186,
+        "parse_and_extract_us": 0,
+        "relationship_us": 351,
+        "returned_bytes": 11919,
+        "returned_symbols": 12,
+        "selection_us": 1075,
+        "source_bytes": 25371254,
+        "symbols": 96293,
+        "traversal_us": 0
+      },
+      "symbols": [
+        {
+          "symbol": "IPluginAuth",
+          "path": "apps/chat-agentx/packages/data-schemas/src/types/pluginAuth.ts",
+          "bytes": 181,
+          "sliced": false
+        },
+        {
+          "symbol": "IPluginAuth",
+          "path": "apps/chat-agentx/packages/data-schemas/src/models/pluginAuth.ts",
+          "bytes": 54,
+          "sliced": false
+        },
+        {
+          "symbol": "createPluginAuthMethods",
+          "path": "apps/chat-agentx/packages/data-schemas/src/methods/pluginAuth.ts",
+          "bytes": 3857,
+          "sliced": false
+        },
+        {
+          "symbol": "pluginAuthSchema",
+          "path": "apps/chat-agentx/packages/data-schemas/src/schema/pluginAuth.ts",
+          "bytes": 390,
+          "sliced": false
+        },
+        {
+          "symbol": "getPluginAuthMap",
+          "path": "apps/chat-agentx/packages/api/src/agents/auth.ts",
+          "bytes": 2499,
+          "sliced": false
+        },
+        {
+          "symbol": "FindPluginAuthsByKeysParams",
+          "path": "apps/chat-agentx/packages/data-schemas/src/methods/pluginAuth.ts",
+          "bytes": 153,
+          "sliced": false
+        },
+        {
+          "symbol": "PluginAuthForm",
+          "path": "apps/chat-agentx/client/src/components/Plugins/Store/PluginAuthForm.tsx",
+          "bytes": 3770,
+          "sliced": true
+        },
+        {
+          "symbol": "FindPluginAuthParams",
+          "path": "apps/chat-agentx/packages/data-schemas/src/types/pluginAuth.ts",
+          "bytes": 95,
+          "sliced": false
+        },
+        {
+          "symbol": "updateUserPluginAuth",
+          "path": "apps/chat-agentx/api/server/services/PluginService.js",
+          "bytes": 529,
+          "sliced": false
+        },
+        {
+          "symbol": "createPluginAuthModel",
+          "path": "apps/chat-agentx/packages/data-schemas/src/models/pluginAuth.ts",
+          "bytes": 213,
+          "sliced": false
+        },
+        {
+          "symbol": "TPluginAuthConfig",
+          "path": "apps/chat-agentx/packages/data-provider/src/schemas.ts",
+          "bytes": 65,
+          "sliced": false
+        },
+        {
+          "symbol": "UpdatePluginAuthParams",
+          "path": "apps/chat-agentx/packages/data-schemas/src/types/pluginAuth.ts",
+          "bytes": 113,
+          "sliced": false
+        }
+      ]
+    },
+    {
+      "query": "createRemoteAgentAuth",
+      "median_ms": 38.445186999524594,
+      "p95_ms": 48.397541999293026,
+      "ranking_median_ms": 29.094,
+      "relationships_median_ms": 4.371,
+      "selection_median_ms": 4.1754999999999995,
+      "stats": {
+        "approximate_tokens": 4072,
+        "cache_load_us": 0,
+        "cache_write_us": 0,
+        "candidate_and_ranking_us": 27503,
+        "candidate_symbols": 62930,
+        "elapsed_us": 35722,
+        "files_indexed": 3516,
+        "files_parsed": 0,
+        "files_reparsed": 0,
+        "files_reused": 3516,
+        "files_scanned": 4192,
+        "human_payload_bytes": 27203,
+        "index_reused": true,
+        "index_us": 0,
+        "json_payload_bytes": 59974,
+        "parse_and_extract_us": 0,
+        "relationship_us": 3841,
+        "returned_bytes": 16269,
+        "returned_symbols": 12,
+        "selection_us": 4199,
+        "source_bytes": 25371254,
+        "symbols": 96293,
+        "traversal_us": 0
+      },
+      "symbols": [
+        {
+          "symbol": "createRemoteAgentAuth",
+          "path": "apps/chat-agentx/packages/api/src/middleware/remoteAgentAuth.ts",
+          "bytes": 3845,
+          "sliced": true
+        },
+        {
+          "symbol": "getRemoteAuthConfig",
+          "path": "apps/chat-agentx/packages/api/src/middleware/remoteAgentAuth.ts",
+          "bytes": 132,
+          "sliced": false
+        },
+        {
+          "symbol": "clearRemoteAgentAuthCache",
+          "path": "apps/chat-agentx/packages/api/src/middleware/remoteAgentAuth.spec.ts",
+          "bytes": 85,
+          "sliced": false
+        },
+        {
+          "symbol": "requireRemoteAgentAuth",
+          "path": "apps/chat-agentx/api/server/routes/agents/middleware.js",
+          "bytes": 148,
+          "sliced": false
+        },
+        {
+          "symbol": "RemoteAgentAccessRequest",
+          "path": "apps/chat-agentx/packages/api/src/apiKeys/middleware.ts",
+          "bytes": 152,
+          "sliced": false
+        },
+        {
+          "symbol": "createAgentMethods",
+          "path": "apps/chat-agentx/packages/data-schemas/src/methods/agent.ts",
+          "bytes": 3998,
+          "sliced": true
+        },
+        {
+          "symbol": "RemoteAgentAuthDeps",
+          "path": "apps/chat-agentx/packages/api/src/middleware/remoteAgentAuth.ts",
+          "bytes": 218,
+          "sliced": false
+        },
+        {
+          "symbol": "create",
+          "path": "apps/chat-agentx/packages/api/src/mcp/MCPConnectionFactory.ts",
+          "bytes": 278,
+          "sliced": false
+        },
+        {
+          "symbol": "createAgentHandler",
+          "path": "apps/chat-agentx/api/server/controllers/agents/v1.js",
+          "bytes": 4623,
+          "sliced": false
+        },
+        {
+          "symbol": "createTestAgent",
+          "path": "apps/chat-agentx/api/server/routes/agents/__tests__/responses.spec.js",
+          "bytes": 959,
+          "sliced": false
+        },
+        {
+          "symbol": "AgentAuthConfig",
+          "path": "apps/chat-agentx/packages/api/src/middleware/remoteAgentAuth.spec.ts",
+          "bytes": 86,
+          "sliced": false
+        },
+        {
+          "symbol": "createOAuthFetch",
+          "path": "apps/chat-agentx/packages/api/src/mcp/oauth/handler.ts",
+          "bytes": 1745,
+          "sliced": true
+        }
+      ]
+    }
+  ],
+  "budgets": [
+    {
+      "budget": 2048,
+      "latency_ms": 4.714167000201996,
+      "returned_tokens": 1636,
+      "returned_bytes": 6528,
+      "symbols": [
+        "auth",
+        "IPluginAuth",
+        "findOnePluginAuth",
+        "deletePluginAuth",
+        "runAuth",
+        "validateOAuthUrl",
+        "authRes",
+        "AuthStep",
+        "authRules",
+        "AuthSectionProps",
+        "runApiKeyAuth",
+        "AuthType"
+      ]
+    },
+    {
+      "budget": 4096,
+      "latency_ms": 4.048792001412949,
+      "returned_tokens": 2146,
+      "returned_bytes": 8565,
+      "symbols": [
+        "auth",
+        "IPluginAuth",
+        "findOnePluginAuth",
+        "deletePluginAuth",
+        "runAuth",
+        "validateOAuthUrl",
+        "authRes",
+        "AuthStep",
+        "authRules",
+        "AuthSectionProps",
+        "runApiKeyAuth",
+        "requireJwtAuth"
+      ]
+    },
+    {
+      "budget": 8192,
+      "latency_ms": 3.9335000001301523,
+      "returned_tokens": 2146,
+      "returned_bytes": 8565,
+      "symbols": [
+        "auth",
+        "IPluginAuth",
+        "findOnePluginAuth",
+        "deletePluginAuth",
+        "runAuth",
+        "validateOAuthUrl",
+        "authRes",
+        "AuthStep",
+        "authRules",
+        "AuthSectionProps",
+        "runApiKeyAuth",
+        "requireJwtAuth"
+      ]
+    }
+  ]
+}

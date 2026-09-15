@@ -1,0 +1,120 @@
+{
+  "comparisons": [
+    {
+      "query": "auth",
+      "rg_output_bytes": 1288,
+      "flexcontext_output_bytes": 1706,
+      "flexcontext_payload_bytes": 3802,
+      "rg_latency_us": 17043,
+      "flexcontext_latency_us": 2160,
+      "flexcontext_symbols": 12,
+      "flexcontext_candidates": 16,
+      "cache_reused": true
+    },
+    {
+      "query": "authentication",
+      "rg_output_bytes": 384,
+      "flexcontext_output_bytes": 1674,
+      "flexcontext_payload_bytes": 3612,
+      "rg_latency_us": 7083,
+      "flexcontext_latency_us": 1343,
+      "flexcontext_symbols": 12,
+      "flexcontext_candidates": 16,
+      "cache_reused": true
+    },
+    {
+      "query": "validate token",
+      "rg_output_bytes": 69,
+      "flexcontext_output_bytes": 1355,
+      "flexcontext_payload_bytes": 2939,
+      "rg_latency_us": 6747,
+      "flexcontext_latency_us": 678,
+      "flexcontext_symbols": 10,
+      "flexcontext_candidates": 9,
+      "cache_reused": true
+    },
+    {
+      "query": "UserSession",
+      "rg_output_bytes": 558,
+      "flexcontext_output_bytes": 1326,
+      "flexcontext_payload_bytes": 3032,
+      "rg_latency_us": 6631,
+      "flexcontext_latency_us": 730,
+      "flexcontext_symbols": 10,
+      "flexcontext_candidates": 9,
+      "cache_reused": true
+    },
+    {
+      "query": "config",
+      "rg_output_bytes": 140,
+      "flexcontext_output_bytes": 435,
+      "flexcontext_payload_bytes": 960,
+      "rg_latency_us": 6141,
+      "flexcontext_latency_us": 764,
+      "flexcontext_symbols": 4,
+      "flexcontext_candidates": 5,
+      "cache_reused": true
+    },
+    {
+      "query": "parseRequest",
+      "rg_output_bytes": 392,
+      "flexcontext_output_bytes": 650,
+      "flexcontext_payload_bytes": 1401,
+      "rg_latency_us": 5701,
+      "flexcontext_latency_us": 879,
+      "flexcontext_symbols": 5,
+      "flexcontext_candidates": 5,
+      "cache_reused": true
+    }
+  ],
+  "quality": [
+    {
+      "query": "auth",
+      "k": 5,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0,
+      "relevant_bytes_ratio": 0.757679180887372,
+      "returned_bytes": 879
+    },
+    {
+      "query": "authentication",
+      "k": 5,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.75,
+      "relevant_bytes_ratio": 0.8095238095238095,
+      "returned_bytes": 840
+    },
+    {
+      "query": "validate token",
+      "k": 5,
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0,
+      "relevant_bytes_ratio": 0.9457547169811321,
+      "returned_bytes": 848
+    },
+    {
+      "query": "UserSession",
+      "k": 5,
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.0,
+      "relevant_bytes_ratio": 0.7377300613496932,
+      "returned_bytes": 652
+    },
+    {
+      "query": "config",
+      "k": 5,
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.0,
+      "relevant_bytes_ratio": 0.8344827586206897,
+      "returned_bytes": 435
+    },
+    {
+      "query": "parseRequest",
+      "k": 5,
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "relevant_bytes_ratio": 0.4846153846153846,
+      "returned_bytes": 650
+    }
+  ]
+}

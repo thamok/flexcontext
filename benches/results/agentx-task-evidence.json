@@ -1,0 +1,125 @@
+{
+  "method": "Exact evidence coverage on three repository questions; no model answer or code-change success is measured.",
+  "cases": [
+    {
+      "question": "Which filters constrain plugin-auth lookup, and when is pluginKey applied?",
+      "query": "findOnePluginAuth",
+      "budget": 2048,
+      "target_found": true,
+      "evidence_found": 4,
+      "evidence_total": 4,
+      "missing": [],
+      "source_bytes": 6488,
+      "target_bytes": 627,
+      "target_sliced": false,
+      "latency_ms": 7.942125001136446
+    },
+    {
+      "question": "Which filters constrain plugin-auth lookup, and when is pluginKey applied?",
+      "query": "findOnePluginAuth",
+      "budget": 4096,
+      "target_found": true,
+      "evidence_found": 4,
+      "evidence_total": 4,
+      "missing": [],
+      "source_bytes": 6939,
+      "target_bytes": 627,
+      "target_sliced": false,
+      "latency_ms": 8.708875000593252
+    },
+    {
+      "question": "Which filters constrain plugin-auth lookup, and when is pluginKey applied?",
+      "query": "findOnePluginAuth",
+      "budget": 8192,
+      "target_found": true,
+      "evidence_found": 4,
+      "evidence_total": 4,
+      "missing": [],
+      "source_bytes": 6939,
+      "target_bytes": 627,
+      "target_sliced": false,
+      "latency_ms": 6.764499998098472
+    },
+    {
+      "question": "How does deleting all plugin-auth entries differ from deleting one?",
+      "query": "deletePluginAuth",
+      "budget": 2048,
+      "target_found": true,
+      "evidence_found": 6,
+      "evidence_total": 6,
+      "missing": [],
+      "source_bytes": 3293,
+      "target_bytes": 845,
+      "target_sliced": false,
+      "latency_ms": 5.728667001676513
+    },
+    {
+      "question": "How does deleting all plugin-auth entries differ from deleting one?",
+      "query": "deletePluginAuth",
+      "budget": 4096,
+      "target_found": true,
+      "evidence_found": 6,
+      "evidence_total": 6,
+      "missing": [],
+      "source_bytes": 3293,
+      "target_bytes": 845,
+      "target_sliced": false,
+      "latency_ms": 4.892291999567533
+    },
+    {
+      "question": "How does deleting all plugin-auth entries differ from deleting one?",
+      "query": "deletePluginAuth",
+      "budget": 8192,
+      "target_found": true,
+      "evidence_found": 6,
+      "evidence_total": 6,
+      "missing": [],
+      "source_bytes": 3293,
+      "target_bytes": 845,
+      "target_sliced": false,
+      "latency_ms": 5.790625000372529
+    },
+    {
+      "question": "Which four branches fall back to API-key authentication in remote-agent auth?",
+      "query": "createRemoteAgentAuth",
+      "budget": 2048,
+      "target_found": true,
+      "evidence_found": 2,
+      "evidence_total": 4,
+      "missing": [
+        "if (authConfig?.oidc?.enabled !== true)",
+        "if (token == null)"
+      ],
+      "source_bytes": 8162,
+      "target_bytes": 2041,
+      "target_sliced": true,
+      "latency_ms": 48.844083001313265
+    },
+    {
+      "question": "Which four branches fall back to API-key authentication in remote-agent auth?",
+      "query": "createRemoteAgentAuth",
+      "budget": 4096,
+      "target_found": true,
+      "evidence_found": 4,
+      "evidence_total": 4,
+      "missing": [],
+      "source_bytes": 16269,
+      "target_bytes": 3845,
+      "target_sliced": true,
+      "latency_ms": 42.02483299741289
+    },
+    {
+      "question": "Which four branches fall back to API-key authentication in remote-agent auth?",
+      "query": "createRemoteAgentAuth",
+      "budget": 8192,
+      "target_found": true,
+      "evidence_found": 4,
+      "evidence_total": 4,
+      "missing": [],
+      "source_bytes": 22358,
+      "target_bytes": 4191,
+      "target_sliced": false,
+      "latency_ms": 43.95933399791829
+    }
+  ]
+}
